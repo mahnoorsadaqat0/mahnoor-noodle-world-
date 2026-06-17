@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Mahnoor's web development journey, portfolio projects, and a curated collection of world-famous noodle recipes.">
+    <title>Mahnoor's Noodle World | Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Entry Sign Up Wall -->
+  <div id="signup-wall" class="wall-overlay">
+    <div class="wall-content">
+      <h1>Noodle Lover Club 🍜</h1>
+      <p>Welcome! Please sign up to enter Mahnoor's world of noodles.</p>
+      <form id="signup-form" class="wall-form">
+        <input type="text" id="username-input" placeholder="Chunye apna Username" required>
+        <input type="password" id="password-input" placeholder="Password banayein" required>
+        <button type="submit" class="glow-on-hover">Enter Website</button>
+      </form>
+    </div>
+  </div>
+  <header>
+    <nav class="main-nav">
+      <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="page2.html">All Recipes</a>
+      </div>
+      <button id="dark-mode-toggle">🌙 Dark Mode</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to Mahnoor's Noodle World 🍜</h1>
+        <p>Exploring the art of code and the flavor of noodles, one bowl at a time.</p>
+        <div class="hero-btns">
+          <a href="page2.html" class="cta-btn">Explore Recipes</a>
+          <a href="#about" class="secondary-btn">About Me</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <section id="about" class="content-section">
+        <h2>About Me</h2>
+        <p>Hi, I am Mahnoor! I'm a student who loves to code and explore new things. This website is a place where I document my learning journey and share some of my favorite recipes. Thanks for stopping by!</p>
+        
+        <h3>My Skills</h3>
+        <div class="skills-container">
+          <span class="skill-tag">HTML5</span>
+          <span class="skill-tag">CSS3</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">UI Design</span>
+        </div>
+      </section>
+
+      <section id="projects" class="content-section">
+        <h2>My Portfolio</h2>
+        <p>Logon ko dikhane ke liye mere banaye hue projects:</p>
+        <div class="skills-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px;">
+          <div style="border: 1px solid var(--hr-color); padding: 10px; border-radius: 8px; text-align: center;">
+            <strong style="display: block; margin-bottom: 5px;">🍜 Noodle World App</strong>
+            <p style="font-size: 0.8em;">Responsive web app for food lovers.</p>
+            <a href="page2.html" style="font-size: 0.8em; color: var(--accent-color);">View Project</a>
+          </div>
+          <!-- Aap yahan aur projects bhi add kar sakti hain -->
+        </div>
+      </section>
+
+      <section id="google-search" class="content-section search-highlight">
+        <h2>Search Google</h2>
+      <form action="https://www.google.com/search" method="GET" target="_blank" class="search-box">
+        <input type="text" name="q" placeholder="Type here to search on Google..." required>
+        <button type="submit" class="google-btn">Google Search</button>
+      </form>
+       <p><a href="page2.html" style="margin-top: 15px; display: block;">Explore all recipes</a></p>
+    </section>
+
+      <section class="content-section">
+        <h2>Shopping List</h2>
+        <ul id="interactive-list">
+          <li>milk</li>
+          <li>eggs</li>
+          <li>bread</li>
+          <li>Knorr noodles</li>
+        </ul>
+      </section>
+
+      <section class="recipe content-section" id="knorr-recipe">
+      <h2>Knorr Noodles Recipe</h2>
+      <h3>Ingredients</h3>
+      <ul>
+        <li>1 packet Knorr noodles</li>
+        <li>2 cups water</li>
+        <li>1 tbsp oil or butter</li>
+        <li>Optional: chopped vegetables (carrot, peas, capsicum)</li>
+        <li>Optional: chilli flakes, spring onion</li>
+      </ul>
+      <h3>Instructions</h3>
+      <ol>
+        <li>Boil 2 cups of water in a saucepan.</li>
+        <li>Add noodles and cook for 2–3 minutes until soft.</li>
+        <li>Drain most of the water leaving a little for softness.</li>
+        <li>Add the masala (seasoning) from the packet and 1 tbsp oil/butter.</li>
+        <li>Mix well. Add vegetables or garnish if desired. Serve hot.</li>
+      </ol>
+      <details>
+        <summary>Recipe (code)</summary>
+        <pre class="code" id="recipeCode">{
+    "name": "Knorr Noodles",
+    "servings": 1,
+    "ingredients": ["1 packet Knorr noodles","2 cups water","1 tbsp oil","optional vegetables"],
+    "steps": [
+      "Boil water",
+      "Add noodles and cook 2-3 minutes",
+      "Drain leaving little water",
+      "Add masala and oil",
+      "Mix and serve hot"
+    ]
+  }</pre>
+        <button class="copy">Copy JSON</button>
+      </details>
+    </section>
+
+      <section id="noodle-customization" class="content-section">
+        <h2>Personalize Your Noodles!</h2>
+      <p>Sirf masala kaafi nahi hota, in toppings se noodles aur bhi mazedaar ban sakte hain:</p>
+      <div class="topping-grid">
+        <details class="topping-card">
+          <summary><span class="emoji">🥚</span> Protein Boost</summary>
+          <div class="topping-content">
+            <p>Ek boiled ya fried egg upar rakhne se taste double ho jata hai.</p>
+          </div>
+        </details>
+        <details class="topping-card">
+          <summary><span class="emoji">🥦</span> Fresh Veggies</summary>
+          <div class="topping-content">
+            <p>Shimla mirch (Capsicum) aur gajar se crunch add karein.</p>
+          </div>
+        </details>
+        <details class="topping-card">
+          <summary><span class="emoji">🧀</span> Cheesy Delight</summary>
+          <div class="topping-content">
+            <p>Garma garam noodles par cheese slice daal kar melt hone dein.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+      <section id="contact-section" class="content-section">
+      <h2>Baat Cheet Karein! ✍️</h2>
+      <p>Aapko meri recipes kaisi lagin? Ya agar aapki koi apni secret recipe hai toh mujhse share karein!</p>
+      <form class="contact-form" id="mainContactForm">
+        <input type="text" placeholder="Aapka Naam" required>
+        <input type="email" placeholder="Email Address" required>
+        <select required style="width: 100%; padding: 12px; margin: 10px 0; border: 1px solid var(--hr-color); border-radius: 6px; background: var(--card-bg); color: var(--text-color); font-family: inherit;">
+          <option value="" disabled selected>Apni Favourite Noodle Select Karein</option>
+          <option value="ramen">Spicy Ramen 🔥</option>
+          <option value="maggi">Classic Maggi 🇮🇳</option>
+          <option value="pasta">Creamy Pasta 🍝</option>
+          <option value="other">Koi Aur...</option>
+        </select>
+        <textarea rows="4" placeholder="Apna message ya recipe suggestion yahan likhein..." required></textarea>
+        <button type="submit">Message Bhej Dein</button>
+      </form>
+    </section>
+    </div>
+  </main>
+
+    <footer>
+      <p>&copy; 2026 Mahnoor's Noodle World. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://github.com" target="_blank">GitHub</a>
+        <a href="mailto:your-email@example.com">Contact Me</a>
+      </div>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>

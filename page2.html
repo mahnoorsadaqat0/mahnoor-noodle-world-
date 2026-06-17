@@ -1,0 +1,206 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Mahnoor's curated collection of noodle recipes: spicy, Asian, Italian, quick, and healthy options from around the world.">
+    <title>Noodle Varieties | Mahnoor's Noodle World</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Entry Sign Up Wall -->
+  <div id="signup-wall" class="wall-overlay">
+    <div class="wall-content">
+      <h1>Noodle Lover Club 🍜</h1>
+      <p>Welcome! Please sign up to enter Mahnoor's world of noodles.</p>
+      <form id="signup-form" class="wall-form">
+        <input type="text" id="username-input" placeholder="Chunye apna Username" required>
+        <input type="password" id="password-input" placeholder="Password banayein" required>
+        <button type="submit" class="glow-on-hover">Enter Website</button>
+      </form>
+    </div>
+  </div>
+    <header>
+        <nav class="main-nav">
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="page2.html" class="active">All Recipes</a>
+            </div>
+            <button id="dark-mode-toggle">🌙 Dark Mode</button>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Noodle Varieties & Recipes</h1>
+        <p>Welcome to my Noodle Recipe Gallery! 🍜 Yahan aap hamari noodles ki special varieties dekh sakte hain.</p>
+
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="spicy">Spicy</button>
+            <button class="filter-btn" data-filter="asian">Asian</button>
+            <button class="filter-btn" data-filter="italian">Italian</button>
+            <button class="filter-btn" data-filter="quick">Quick</button>
+            <button class="filter-btn" data-filter="healthy">Healthy</button>
+            <button class="filter-btn" data-filter="indian">Indian</button>
+            <button class="filter-btn surprise-btn" id="surprise-me">✨ Surprise Me!</button>
+        </div>
+
+        <div class="gallery">
+            <div class="gallery-item hot-card" data-category="spicy asian">
+                <img src="https://images.unsplash.com/photo-1552611052-33e04de081de?w=400&h=300&fit=crop" alt="Spicy Ramen">
+                <p>🔥 Garam Garam Spicy Ramen</p>
+            </div>
+            <div class="gallery-item hot-card" data-category="asian quick healthy">
+                <img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?w=400&h=300&fit=crop" alt="Stir-fry Noodles">
+                <p>🍳 Sizzling Stir-fry</p>
+            </div>
+            <div class="gallery-item hot-card" data-category="asian quick">
+                <img src="https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?w=400&h=300&fit=crop" alt="Chow Mein">
+                <p>🥢 Steaming Chicken Chow Mein</p>
+            </div>
+            <div class="gallery-item hot-card" data-category="healthy quick">
+                <img src="https://images.unsplash.com/photo-1591814468924-caf88d1232e1?w=400&h=300&fit=crop" alt="Noodle Soup">
+                <p>🥣 Warm Healthy Noodle Soup</p>
+            </div>
+            <div class="gallery-item hot-card" data-category="spicy asian">
+                <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=400&h=300&fit=crop" alt="Pad Thai">
+                <p>🌶️ Tangy Pad Thai</p>
+            </div>
+            <div class="gallery-item hot-card" data-category="spicy asian">
+                <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&h=300&fit=crop" alt="Laksa">
+                <p>🥥 Creamy Coconut Laksa</p>
+            </div>
+            <div class="gallery-item hot-card" data-category="asian healthy">
+                <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&h=300&fit=crop" alt="Udon Noodles">
+                <p>🍜 Hearty Udon Noodles</p>
+            </div>
+            <div class="gallery-item hot-card" data-category="asian healthy">
+                <img src="https://images.unsplash.com/photo-1552611052-33e04de081de?w=400&h=300&fit=crop" alt="Pho">
+                <p>🌿 Aromatic Vietnamese Pho</p>
+            </div>
+            <div class="gallery-item hot-card" data-category="asian healthy">
+                <img src="https://images.unsplash.com/photo-1511910849309-0dffb8785146?w=400&h=300&fit=crop" alt="Soba Noodles">
+                <p>🥢 Chilled Soba Noodles</p>
+            </div>
+            <div class="gallery-item hot-card" data-category="asian quick">
+                <img src="https://images.unsplash.com/photo-1626074353765-517a681e40be?w=400&h=300&fit=crop" alt="Indomie Mi Goreng">
+                <p>🇮🇩 Classic Indomie Mi Goreng</p>
+            </div>
+            <div class="gallery-item hot-card" data-category="asian">
+                <img src="https://images.unsplash.com/photo-1623341214825-9f4f963727da?w=400&h=300&fit=crop" alt="Jajangmyeon">
+                <p>🖤 Korean Black Bean Noodles (Jajangmyeon)</p>
+            </div>
+            <div class="gallery-item hot-card" data-category="asian quick">
+                <img src="https://images.unsplash.com/photo-1618449840665-9ed506d73a34?w=400&h=300&fit=crop" alt="Yakisoba">
+                <p>🇯🇵 Japanese Fried Yakisoba</p>
+            </div>
+            <div class="gallery-item hot-card" data-category="italian quick">
+                <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=400&h=300&fit=crop" alt="Spaghetti">
+                <p>🍝 Italian Spaghetti Aglio e Olio</p>
+            </div>
+            <div class="gallery-item hot-card" data-category="spicy asian">
+                <img src="https://images.unsplash.com/photo-1630431341973-02e1b662ec35?w=400&h=300&fit=crop" alt="Khao Soy">
+                <p>🍜 Thai Coconut Curry Khao Soy</p>
+            </div>
+            <div class="gallery-item hot-card" data-category="spicy asian">
+                <img src="https://images.pexels.com/photos/2313642/pexels-photo-2313642.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=1" alt="Dan Dan Noodles">
+                <p>🌶️ Spicy Sichuan Dan Dan Noodles</p>
+            </div>
+            <div class="gallery-item hot-card" data-category="quick indian">
+                <img src="https://images.unsplash.com/photo-1526318896980-cf78c088247c?w=400&h=300&fit=crop" alt="Maggi Noodles">
+                <p>🇮🇳 Everyone's Favorite Maggi</p>
+            </div>
+            <div class="gallery-item hot-card" data-category="italian quick">
+                <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=400&h=300&fit=crop" alt="Shrimp Scampi">
+                <p>🍤 Garlic Shrimp Scampi</p>
+            </div>
+            <div class="gallery-item hot-card" data-category="asian">
+                <img src="https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?w=400&h=300&fit=crop" alt="Biang Biang Noodles">
+                <p>🇨🇳 Famous Biang Biang Wide Noodles</p>
+            </div>
+            <div class="gallery-item hot-card" data-category="spicy asian quick">
+                <img src="https://images.unsplash.com/photo-1583224964978-2257b960c3d3?w=400&h=300&fit=crop" alt="Kimchi Ramyun">
+                <p>🇰🇷 Spicy Kimchi Ramyun</p>
+            </div>
+            <div class="gallery-item hot-card" data-category="spicy asian">
+                <img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=400&h=300&fit=crop" alt="Thai Green Curry Noodles">
+                <p>🥘 Thai Green Curry Noodles</p>
+            </div>
+            <div class="gallery-item hot-card" data-category="italian quick">
+                <img src="https://images.unsplash.com/photo-1473093226795-af9932fe5856?w=400&h=300&fit=crop" alt="Penne Pasta">
+                <p>🇮🇹 Creamy Tomato Penne</p>
+            </div>
+            <div class="gallery-item hot-card" data-category="spicy asian">
+                <img src="https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?w=400&h=300&fit=crop" alt="Singapore Noodles">
+                <p>🇸🇬 Spicy Singapore Curry Noodles</p>
+            </div>
+            <div class="gallery-item hot-card" data-category="italian healthy">
+                <img src="https://images.unsplash.com/photo-1555072956-7758afb20e8f?w=400&h=300&fit=crop" alt="Fettuccine">
+                <p>🍄 Creamy Mushroom Fettuccine</p>
+            </div>
+            <div class="gallery-item hot-card" data-category="asian quick">
+                <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=400&h=300&fit=crop" alt="Lo Mein">
+                <p>🥡 Vegetable Lo Mein</p>
+            </div>
+            <div class="gallery-item hot-card" data-category="italian quick">
+                <img src="https://images.unsplash.com/photo-1612874742237-6526221588e3?w=400&h=300&fit=crop" alt="Carbonara">
+                <p>🥓 Creamy Egg Carbonara</p>
+            </div>
+            <div class="gallery-item hot-card" data-category="healthy quick">
+                <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=300&fit=crop" alt="Zoodles">
+                <p>🥒 Healthy Zucchini Noodles</p>
+            </div>
+            <div class="gallery-item hot-card" data-category="asian healthy">
+                <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=400&h=300&fit=crop" alt="Sesame Noodles">
+                <p>🥜 Nutty Sesame Noodles</p>
+            </div>
+            <div class="gallery-item hot-card" data-category="spicy asian">
+                <img src="https://images.unsplash.com/photo-1526318896980-cf78c088247c?w=400&h=300&fit=crop" alt="Curry Mee">
+                <p>🥘 Malaysian Curry Mee</p>
+            </div>
+            <div class="gallery-item hot-card" data-category="asian quick">
+                <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=400&h=300&fit=crop" alt="Fried Rice Noodles">
+                <p>🥢 Wok-Tossed Rice Noodles</p>
+            </div>
+        </div>
+
+        <!-- Unique Recipe Modal -->
+        <div id="recipe-modal" class="modal-overlay">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div id="modal-body">
+                    <!-- Content will be injected by JS -->
+                </div>
+            </div>
+        </div>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form class="contact-form" id="contactForm">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <textarea rows="4" placeholder="How can I help you?" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <section style="margin-top: 40px;">
+            <h2>Next Goals</h2>
+            <ul>
+                <li>✅ Hosted this website on GitHub Pages!</li>
+                <li>Add a "Recipe of the Day" section</li>
+                <li>Implement a mobile-responsive navigation menu</li>
+            </ul>
+        </section>
+
+        <div style="margin-top: 20px;">
+            <a href="index.html" style="color: #d97706; text-decoration: none; font-weight: bold;">&larr; Back to Home</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mahnoor's Noodle World. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
